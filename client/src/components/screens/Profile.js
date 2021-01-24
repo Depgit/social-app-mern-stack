@@ -83,15 +83,15 @@ const Profile  = ()=>{
                    <h5>{state?state.email:"loading"}</h5>
                    <div style={{display:"flex",justifyContent:"space-between",width:"108%"}}>
                        <h6>{mypics.length} posts</h6>
-                       {/* <h6>{state.follower!=undefined?state.followers.length:"0"} followers</h6>
-                       <h6>{state.following!=undefined?state.following.length:"0"} following</h6> */}
+                       <h6>{state!=undefined?state.followers.length:"0"} followers</h6>
+                       <h6>{state!=undefined?state.following.length:"0"} following</h6>
                    </div>
 
                </div>
            </div>
         
             <div className="file-field input-field" style={{margin:"10px"}}>
-            <div className="btn #64b5f6 blue darken-1">
+            <div className="btn #64b5f6 grey darken-1">
                 <span>Update pic</span>
                 <input type="file" onChange={(e)=>updatePhoto(e.target.files[0])} />
             </div>

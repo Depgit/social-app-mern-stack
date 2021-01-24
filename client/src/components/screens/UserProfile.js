@@ -107,7 +107,7 @@ const Profile  = ()=>{
                    {showfollow?
                    <button style={{
                        margin:"10px"
-                   }} className="btn waves-effect waves-light #64b5f6 blue darken-1"
+                   }} className="btn waves-effect waves-light #64b5f6 grey darken-1"
                     onClick={()=>followUser()}
                     >
                         Follow
@@ -117,7 +117,7 @@ const Profile  = ()=>{
                     style={{
                         margin:"10px"
                     }}
-                    className="btn waves-effect waves-light #64b5f6 blue darken-1"
+                    className="btn waves-effect waves-light #64b5f6 grey darken-1"
                     onClick={()=>unfollowUser()}
                     >
                         UnFollow
