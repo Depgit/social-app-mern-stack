@@ -14,7 +14,7 @@ import SubscribedUserPosts from './components/screens/SubscribesUserPosts'
 // import NewPassword from './components/screens/Newpassword'
 export const UserContext = createContext()
 
-alert("enable desktop mode");
+// alert("enable desktop mode");
 
 
 const Routing = ()=>{
