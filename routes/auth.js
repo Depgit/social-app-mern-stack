@@ -7,17 +7,6 @@ const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const {JWT_SECRET} = require('../config/keys')
 const requireLogin = require('../middleware/requireLogin')
-// const nodemailer = require('nodemailer')
-// const sendgridTransport = require('nodemailer-sendgrid-transport')
-// const {SENDGRID_API,EMAIL} = require('../config/keys')
-//
-
-
-// const transporter = nodemailer.createTransport(sendgridTransport({
-//     auth:{
-//         api_key:SENDGRID_API
-//     }
-// }))
 
 router.post('/signup',(req,res)=>{
   const {name,email,password,pic} = req.body 
@@ -40,12 +29,7 @@ router.post('/signup',(req,res)=>{
     
             user.save()
             .then(user=>{
-                // transporter.sendMail({
-                //     to:user.email,
-                //     from:"no-reply@insta.com",
-                //     subject:"signup success",
-                //     html:"<h1>welcome to instagram</h1>"
-                // })
+                
                 res.json({message:"saved successfully"})
             })
             .catch(err=>{
