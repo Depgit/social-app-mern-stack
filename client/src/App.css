@@ -37,9 +37,9 @@ a{
 }
 
 .gallery{
-  display: grid;
+/*   display: grid;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-around; */
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 5vw);
