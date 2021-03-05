@@ -110,7 +110,7 @@ const Home = () => {
             })
     }
     return (
-        <div className="home gallery item">
+        <div className="home ">
             {
                 data.map(item => {
                     return (
