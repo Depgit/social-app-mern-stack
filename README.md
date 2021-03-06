@@ -1,2 +1,2 @@
 # demo 
-<a href="https://depcraze.heroku.com"> demo </a>
+<a href="http://depcraze.herokuapp.com"> demo </a>
