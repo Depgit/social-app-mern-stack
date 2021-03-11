@@ -149,17 +149,17 @@ const Home = () => {
                                     item.comments.map(record => {
                                         return (
                                             <h6 className="colo" key={record._id}>
-                                             <script> 
-                                                $(document).ready(function(){
-                                                      $("#flip").click(function(){
-                                                        $("#panel").slideToggle("slow");
-                                                      });
-                                                });
-                                            </script>
-                                            <div id="flip">show more</div>
-                                            <div id="panel">
+//                                              <script> 
+//                                                 $(document).ready(function(){
+//                                                       $("#flip").click(function(){
+//                                                         $("#panel").slideToggle("slow");
+//                                                       });
+//                                                 });
+//                                             </script>
+//                                             <div id="flip">show more</div>
+//                                             <div id="panel">
                                             <span style={{ fontWeight: "500" }}>{record.postedBy.name}</span> :{record.text}
-                                            </div>
+//                                             </div>
                                             </h6>
                                         )
                                     })
