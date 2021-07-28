@@ -69,9 +69,7 @@ const SignIn  = ()=>{
             </h5>
             <br>
             <h6>
-//                 <Link >Forgot password ?</Link>
                    <button onClick={()=>alert("Relax and try to remember your password")}>Forgot password ?</button>
-                   
             </h6>
     
         </div>
