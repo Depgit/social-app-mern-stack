@@ -63,9 +63,15 @@ const SignIn  = ()=>{
             <h5>
                 <Link to="/signup">Dont have an account ?</Link>
             </h5>
-            {/* <h6>
-                <Link to="/reset">Forgot password ?</Link>
-            </h6> */}
+            <h6>
+//                 <Link >Forgot password ?</Link>
+                   <button onclick="myFunction()">Forgot password ?</button>
+                    <script>
+                        function myFunction() {
+                          alert("relax and try to remeber your password")
+                        }
+                    </script>
+            </h6>
     
         </div>
       </div>
