@@ -13,6 +13,9 @@ const SignIn  = ()=>{
             M.toast({html: "invalid email",classes:"#c62828 red darken-3"})
             return
         }
+    const passwordCheck = () =>{
+        alert("Relax and try to remember your password")
+    }
         fetch("/signin",{
             method:"post",
             headers:{
@@ -38,6 +41,7 @@ const SignIn  = ()=>{
         }).catch(err=>{
             console.log(err)
         })
+        
     }
    return (
       <div className="mycard grey">
@@ -65,12 +69,8 @@ const SignIn  = ()=>{
             </h5>
             <h6>
 //                 <Link >Forgot password ?</Link>
-                   <button onclick="myFunction()">Forgot password ?</button>
-                    <script>
-                        function myFunction() {
-                          alert("relax and try to remeber your password")
-                        }
-                    </script>
+                   <button onClick={()=>passwordCheck()}>Forgot password ?</button>
+                   
             </h6>
     
         </div>
