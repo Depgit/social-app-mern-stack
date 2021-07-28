@@ -66,8 +66,7 @@ const SignIn  = ()=>{
                 <Link to="/signup">Dont have an account ?</Link>
             </h5>
             <h6>
-                   <button className="btn grey darken-1"
-                onClick={()=>alert("Relax and try to remember your password")}>Forgot password ?</button>
+                   <button onClick={()=>alert("Relax and try to remember your password")}>Forgot password ?</button>
             </h6>
     
         </div>
